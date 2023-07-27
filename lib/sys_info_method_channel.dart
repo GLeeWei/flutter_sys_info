@@ -13,7 +13,8 @@ class MethodChannelSysInfo extends SysInfoPlatform {
 
   @override
   Future<String?> getPlatformVersion() async {
-    final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
+    final version =
+        await methodChannel.invokeMethod<String>('getPlatformVersion');
     return version;
   }
 
@@ -26,7 +27,8 @@ class MethodChannelSysInfo extends SysInfoPlatform {
       rethrow;
     }
     return null != deviceInfoData
-        ? SysInfoConversions.convertMapToDeviceInfo(deviceInfoData.cast<String, dynamic>())
+        ? SysInfoConversions.convertMapToDeviceInfo(
+            deviceInfoData.cast<String, dynamic>())
         : null;
   }
 }

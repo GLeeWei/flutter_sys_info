@@ -1,21 +1,22 @@
 name: sys_info
-description: A system Info plugin with some extra functionality.With this plugin you can get same info, such as battery, camera, CPU, Display, DRM, Memory, Network, System.
+description: A system Info plugin with some extra functionality. With this plugin you can get same info, such as battery, camera, CPU, Display, DRM, Memory, Network, System.
 version: 0.0.1
-homepage:
+homepage: https://github.com/meetleev
+repository: https://github.com/meetleev/flutter_sys_info
 
 environment:
-  sdk: '>=2.18.1 <3.0.0'
-  flutter: ">=2.5.0"
+  sdk: '>=2.18.1 <4.0.0'
+  flutter: ">=3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  plugin_platform_interface: ^2.0.2
+  plugin_platform_interface: ^2.1.5
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^2.0.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

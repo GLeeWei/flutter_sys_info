@@ -1,4 +1,3 @@
-
 import 'package:sys_info/src/device_info.dart';
 
 import 'sys_info_platform_interface.dart';
